@@ -1,0 +1,132 @@
+body{
+    background-image: url("background.jpg");
+    width:auto;
+    height:auto;
+    z-index:1;
+    overflow:hidden;
+    
+}
+
+table {
+    border: 0px;
+    padding:0px;
+    margin-top:30px;
+    
+
+    
+}
+th,td{
+    border:0px;
+    margin-bottom:20px;
+}
+
+
+.main{
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    margin-top:20px;
+    margin-bottom: 15px;
+}
+
+button{
+    font-size: 14px;
+    color: white;
+    background-color: transparent;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    margin-bottom:10px;
+    margin-top:20px;
+    margin-right:0px
+    
+}
+button:hover{
+    color: #bdbdbd;
+}
+
+.first{
+    position:relative;
+   /* right:10px;  */
+}
+
+/* Dropdown Button */
+        .dropbtn {
+    background-color: #660033;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom:0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #660033;
+}
+
+.label{
+    padding:0px;
+    padding-top:5px;
+    margin:0px;
+    margin-bottom:23px;
+ }
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 10%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s
+
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #660033;
+    cursor: pointer;
+}
+
+ 

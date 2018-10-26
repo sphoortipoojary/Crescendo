@@ -1,0 +1,94 @@
+﻿<html>
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="float: left" width 30%>
+        <table border="1">
+
+            <tr><td>  <button id="kick" onclick="playTestSound()" class="label">Kick</button></td></tr>
+            
+            <tr><td>  <button id="kick" onclick="playSnareSound()" class="label">Snare</button></td></tr>
+            
+            <tr>
+                <td>
+                    <button id="kick" onclick="playHiHatOSound()" class="label">Hi-Hat(O)</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button id="kick" onclick="playHiHatCSound()" class="label">Hi-Hat(C)</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button id="kick" onclick="playfloortom()" class="label">Floor Tom</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button id="kick" onclick="playtom1Sound()" class="label">Tom 1</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button id="kick" onclick="playtom2Sound()" class="label">Tom 2</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button id="kick" onclick="playrideSound()" class="label">Ride</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button id="kick" onclick="playcrashSound()" class="label">Crash</button>
+                </td>
+            </tr>
+            
+            <tr><td>      <button id="kick" onclick="playTestSound()" class="label">Extra 1</button></td></tr>
+            <tr><td>      <button id="kick" onclick="playTestSound()" class="label">Extra 2</button></td></tr>
+        </table>
+    <br>
+    </div>
+    <div id="grid" style="float:left;width:80%"></div>
+
+    <script src="grid.js" type="text/javascript"></script>
+
+    <div id="buttons" style="float:right;width:20%"></div>
+    <br>
+    <div class="dropdown">
+        <button class="dropbtn">Select Instrument</button>
+        <div class="dropdown-content">
+            <a href="abc.html">Drum</a><!--dummy links-->
+            <a href="abc.html">Guitar</a>
+            <a href="abc.html">Violin</a>
+        </div>
+    </div>
+    <br>
+    <button id="play" onclick="playMusicOnGrid()">Play Music</button><br>
+
+    <button id="Stop" onclick="stopSong()">Stop Music</button><br>
+
+    <button id="Reset" onclick="refresh()">Reset</button>
+    <br>
+    <br>
+    <br>
+    <div id="slider">
+        <font color="white"> Volume</font><br><br>
+        <input id="slider1" type="range" min="0" max="1" step="0.1" value="0.4" class="slider" onclick="Volume.controlVolume()">
+    </div>
+    <br>
+    <div id="metronome">
+        <font color="white">   Speed</font><br><br>
+        <input id="playbackrate" type="range" min="0.5" max="2" step="0.5" value="1" class="slider">
+    </div>
+</body>
+</html>
